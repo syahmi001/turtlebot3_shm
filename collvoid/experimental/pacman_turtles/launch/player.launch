@@ -1,0 +1,6 @@
+<launch>
+  
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find pacman_controller)/world/maplarge.yaml"/>
+
+  <include file="$(find pacman_turtles)/launch/player_withoutmap.launch" />
+</launch>

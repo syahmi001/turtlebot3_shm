@@ -1,0 +1,17 @@
+
+CollvoidLocalPlanner:
+  use_obstacles: true
+  use_dwa_scoring: true
+  prune_plan: true
+
+  time_to_holo: 0.4
+  min_error_holo: 0.02
+  max_error_holo: 0.10
+  left_pref: -0.05
+
+  type_vo: 0 #HRVO = 0, RVO = 1, VO = 2
+  orca: false #orca or VO
+  clearpath: true #clearpath or sampling
+  num_samples: 400 #num samples
+  new_sampling: true
+  use_truncation: true #truncate vos

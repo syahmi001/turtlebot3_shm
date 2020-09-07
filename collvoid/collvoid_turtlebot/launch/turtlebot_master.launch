@@ -1,0 +1,23 @@
+<launch>
+  <!-- Run the map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find collvoid_turtlebot)/map/smartlab_arena.yaml" output="screen"/>
+
+  <!-- Run the laser -->
+  <include file="$(find collvoid_turtlebot)/launch/hokuyo.launch" />
+
+
+  <include file="$(find turtlebot_navigation)/launch/includes/velocity_smoother.launch.xml"/>
+  <include file="$(find turtlebot_navigation)/launch/includes/safety_controller.launch.xml"/>
+
+
+  <!--- Run AMCL -->
+  <include file="$(find collvoid_turtlebot)/launch/amcl_turtlebot.launch"/>
+ 
+  <!--- Run Controller -->
+  <rosparam command="load" file="$(find collvoid_turtlebot)/goals_tb_lab.yaml"/>
+  <node pkg="collvoid_controller" type="controller_robots.py" name="controller_robots" output="screen" />
+
+  <!--- Run collvoid -->
+  <include file="$(find collvoid_turtlebot)/launch/includes/move_base_dwa.launch"/>
+
+</launch>
