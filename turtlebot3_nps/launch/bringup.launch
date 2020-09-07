@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_remote.launch"/>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find turtlebot3_description)/rviz/model.rviz"/>
+  <include file="$(find turtlebot3_nps)/launch/teleop.launch"/>
+
+</launch>

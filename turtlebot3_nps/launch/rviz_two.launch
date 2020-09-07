@@ -1,0 +1,6 @@
+<launch>
+
+  <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find turtlebot3_nps)/rviz/tb3_two.rviz"/>
+
+</launch>

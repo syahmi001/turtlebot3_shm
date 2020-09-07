@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="tf_prefix" value="/prefix"/>
+  <arg name="ns" default=""/>
+  <param name="tf_prefix" value="/prefix"/>
+  <group ns="$(arg ns)">
+    <node pkg="rosserial_python" type="serial_node.py" name="turtlebot3_core" output="screen">
+    <param name="port" value="/dev/ttyACM0"/>
+    <param name="baud" value="115200"/>
+    <param name="tf_prefix" value="/prefix"/>
+  </node>
+  </group>
+</launch>
