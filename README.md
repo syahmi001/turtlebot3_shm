@@ -2,16 +2,22 @@
 For multiple Turtlebot3 Navigation + ORCA algorithm for local pathing
 
 **Requirement**
+
+
 - Ubuntu 16.04
 - ROS Kinetic Kame
 - Pre-installed catkin_Ws
 `note: please install the following item before proceding`
 
 **About this project**
+
+
 This repository is dedicated for the developement of Robotic Navigation, via turtlebot as the model.
 For the navigation stack, Global pathing used A* algorithm and the Local pathing used ORCA.
 
 **Installation**
+
+
 Just do the "catkin_make" in your catkin_ws/src file.
 
 `cd catkin_ws/src`
@@ -23,6 +29,8 @@ Just do the "catkin_make" in your catkin_ws/src file.
 `catkin_make`
 
 **Running the code**
+
+
 Follow these commands.
 
 - new terminal
@@ -38,11 +46,13 @@ Follow these commands.
 
 **Outcome**
 
+
 ![Optional Text](../master/figures/s1.gif)
 
 
 
 
 **Disclaimer**
+
 - Some of the codes in here are not owned by me. They belongs to the respected people.
 - This project is still under improvement and debugging. The release version will be released soon.
