@@ -7,6 +7,7 @@ For multiple Turtlebot3 Navigation + ORCA algorithm for local pathing
 - Ubuntu 16.04
 - ROS Kinetic Kame
 - Pre-installed catkin_Ws
+
 `note: please install the following item before proceding`
 
 **About this project**
@@ -34,13 +35,16 @@ Just do the "catkin_make" in your catkin_ws/src file.
 Follow these commands.
 
 - new terminal
+
 `roscore`
 
 - new terminal
+
 `export TURTLEBOT3_MODEL=burger`
 `roslaunch turtlebot3_gazebo turtlebot3_world_multi.launch`
 
 - new terminal
+
 `export TURTLEBOT3_MODEL=burger`
 `roslaunch turtlebot3_navigation turtlebot3_navigation_multi.launch`
 
