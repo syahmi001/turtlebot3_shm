@@ -41,11 +41,15 @@ Follow these commands.
 - new terminal
 
 `export TURTLEBOT3_MODEL=burger`
+
+
 `roslaunch turtlebot3_gazebo turtlebot3_world_multi.launch`
 
 - new terminal
 
 `export TURTLEBOT3_MODEL=burger`
+
+
 `roslaunch turtlebot3_navigation turtlebot3_navigation_multi.launch`
 
 **Outcome**
